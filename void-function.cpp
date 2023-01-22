@@ -11,6 +11,12 @@ double power (double base, int exponent) {
     return result;
 }
 
+void print_pow (double base, int exponent) {
+    double myPower = power(base, exponent);
+
+    std::cout << base << " raised to the " << exponent << " power is " << myPower << std::endl;
+}
+
 int main () {
     int base, exponent;
 
@@ -19,8 +25,6 @@ int main () {
     std::cout << "Enter exponent value ";
     std::cin >> exponent;
 
-    double myPower = power(base, exponent);
-
-    std::cout << myPower << std::endl;
+    print_pow(base, exponent);
     return 0;
 }
